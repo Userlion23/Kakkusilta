@@ -4,14 +4,14 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Tarvitsetko laadukkaat verkkosivut tai verkkokaupan? Tyylisivut toteuttaa ja ylläpitää — tehdään sinun mukainen sivu. Pyydä ilmainen tarjous!">
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="yhteystiedot.css">
     <link rel="icon" type="image/png" href="/favicon-96x96.png" sizes="96x96" />
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
     <link rel="shortcut icon" href="/favicon.ico" />
     <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
     <link rel="manifest" href="/site.webmanifest" />
     <link rel="canonical" href="https://kakkusilta.fi" />
-    <title>Kakkusilta | Kotimaista laatua</title>
+    <title>Yhteystiedot | Kakkusilta</title>
   </head>
 
   <body>
@@ -44,65 +44,64 @@
       </nav>
     </header>
 
-		<main>
-			<!-- HERO -->
-			<section class="hero" aria-label="hero">
-				<div class="hero-vasen">
-					<h1>Leivonnaisija joka hetkeen</h1>
-					<p>Käsityönä valmistettuja kakkuja ja leivonnaisia jokaiseen hetkeen – syntymäpäivistä häihin, arjesta juhlaan.</p>
-					<div class="hero-napit">
-						<button class="hero-cta">Katso tuotteet</button>
-						<button class="hero-btn">Tee tilaus</button>
-					</div>
-				</div>
-				<div class="hero-oikea">
-					<div class="hero-oikea-sisus">
-					<img src="tuotekuva" alt="Hero kuva">
-					</div>
-				</div>
-			</section>
+    <main>
+        <section class="lomake">
+            <form action="https://api.web3forms.com/submit" method="POST">
+                <h3>Tilauslomake</h3>
+                <p>Vastaamme 24 tunnin sisällä ja vahvistamme tilauksen.</p>
+                <input type="hidden" name="access_key" value="18f31ed1-7840-479d-8dbb-cd236b407216">
+                <div class="rivi1">
+                    <div class="label">
+                    <label>Nimi</label>
+                    <input type="text" name="name" placeholder="Etunimi Sukunimi" required>
+                    </div>
+                    <div class="label">
+                    <label>Puhelinnumero</label>
+                    <input type="text" name="puhelinnumero" placeholder="040 123 4567" required>
+                    </div>
+                </div>
+                <div class="rivi2">
+                    <div class="label">
+                    <label>Sähköposti</label>
+                    <input type="email" name="email" placeholder="esimerkki@gmail.com" required>
+                    </div>
+                    <div class="label">
+                    <label>Toivottu tuote</label>
+                    <select name="toivottu tuote">
+                    <option value="Mutakakku">Valitse tuote...</option>
+                    <option value="Mutakakku">Syntymäpäiväkakku</option>
+                    <option value="Mutakakku">Kuppikakku</option>
+                    <option value="Mutakakku">Suklaakakku</option>
+                    <option value="Mutakakku">Mutakakku</option>
+                    <option value="Mutakakku">Joku muu</option>
+                    </select>
+                    </div>
+                    </div>
+                    <div class="label">
+                    <label>Lisätiedot ja toiveet.</label>
+                    <textarea name="Lisätiedot" placeholder="Allergeenit, väritoiveet, teksti kakkuun..." required></textarea>
+                    </div>
 
-
-			<!--USP BAR-->
-			<aside>
-				<section class="usp-bar">
-					<div class="usp-bar-in">
-						<div class="usp">
-							<h3>Tilaukset alkaen = ???</h3>
-							<p></p>
-						</div>
-						<div class="usp">
-							<h3>Nopeat toimitukset</h3>
-							<p>1-3 arkipäivää</p>
-						</div>
-						<div class="usp">
-							<h3>Luomuainekset</h3>
-							<p>Suomalaiselta tilalta</p>
-						</div>
-						<div class="usp">
-							<h3>100% asiakas tyytyväisyys</h3>
-							<p></p>
-						</div>
-					</div>
-				</section>
-			</aside>
-
-      <script src="https://cdn.commoninja.com/sdk/latest/commonninja.js" defer></script>
-      <div class="commonninja_component pid-122cd5c8-a793-41a1-adbe-83d6178885f8"></div>
-
-
-
+                </div>
+                    <div class="rivi3">
+                    <button type="submit">Lähetä tilaus →</button>
+                </div>
+            </form>
+        </section>
+    </main>
 
 
 
 
 
 
-		</main>
 
 
 
-  <footer>
+
+
+
+      <footer>
     <section class="topoffooter">
       <section class="infocard">
         <a href="index.html"><img src="logo.png" alt="logo"></a>
@@ -137,24 +136,6 @@
     </section>
 
   </footer>
-
-<script>
-
-      /* Hamburger */
-      const hamburger = document.getElementById("hamburger");
-      const navMenu = document.getElementById("nav-menu");
-      hamburger.addEventListener("click", () => {
-        hamburger.classList.toggle("active");
-        navMenu.classList.toggle("active");
-      });
- 
-      /* Suljetaan menu kun klikataan linkkiä */
-      document.querySelectorAll('.nav-menu a').forEach(link => {
-        link.addEventListener('click', () => {
-          hamburger.classList.remove("active");
-          navMenu.classList.remove("active");
-        });
-      });
-
-</script>
+    
   </body>
+</html>
