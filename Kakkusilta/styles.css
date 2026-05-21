@@ -263,3 +263,63 @@
     opacity: 0.7;
   }
  
+
+
+
+
+
+
+
+
+
+
+
+
+  footer a {
+    text-decoration: none;
+    color: var(--rose);
+  }
+
+
+  .topoffooter {
+    background-color: var(--text);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 40px 40px;
+    border-bottom: 1px solid var(--accent);
+  }
+
+  .infocard {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .infocard ul {
+    display: flex;
+    flex-direction: row;
+  }
+
+  footer div {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .navigation {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .yhteystiedot {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .bottomfooter {
+    background-color: var(--text);
+    color: var(--warm-white);
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 20px;
+  }
+
