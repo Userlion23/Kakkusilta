@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="fi">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Tarvitsetko laadukkaat verkkosivut tai verkkokaupan? Tyylisivut toteuttaa ja ylläpitää — tehdään sinun mukainen sivu. Pyydä ilmainen tarjous!">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" type="image/png" href="/favicon-96x96.png" sizes="96x96" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <link rel="shortcut icon" href="/favicon.ico" />
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+    <link rel="manifest" href="/site.webmanifest" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
+    <link rel="canonical" href="https://kakkusilta.fi" />
+    <title>Kakkusilta | Kotimaista laatua</title>
+  </head>
+
+  <body>
+
+    <!-- NAVBAR -->
+  	<header class="navbar" role="navigation" id="navbar">
+      <nav class="nav-wrapper">
+				<!-- LOGO -->
+        <div class="logo">
+          <a fetchpriority=high href="index.html"><img src="Logo.webp" alt="Logo"></a>
+        </div>
+        <p>Kakkusilta</p>
+				<!-- HAMBURGER -->
+        <button class="hamburger" id="hamburger" aria-label="Avaa valikko">
+          <span></span>
+          <span></span>
+          <span></span>
+  	    </button>
+				<!-- NAVIGAATIO LINKIT -->
+        <div class="nav-menu" id="nav-menu">
+          <div class="nav-links">                    
+            <a class="navlin2" href="#meistä">MEISTÄ</a>
+
+            <a class="navlink1" href="yhteystiedot.html">TEE TILAUS</a>
+          </div>
+        </div>	
+				<!-- NAVIGAATIO IKOONI -->
+        <div class="nav-icons">
+          <button class="nav-icon-btn" title="ostoskori">🛒</button>
+        </div>
+      </nav>
+    </header>
+
+		<main>
+			<!-- HERO -->
+			<section class="hero" aria-label="hero">
+				<div class="hero-vasen">
+					<h1>Leivonnaisija joka hetkeen</h1>
+					<p>Käsityönä valmistettuja kakkuja ja leivonnaisia jokaiseen hetkeen – syntymäpäivistä häihin, arjesta juhlaan.</p>
+					<div class="hero-napit">
+						<button class="hero-cta">Katso tuotteet</button>
+						<button class="hero-btn">Tee tilaus</button>
+					</div>
+				</div>
+				<div class="hero-oikea">
+					<div class="hero-oikea-sisus">
+					<img src="tuotekuva" alt="Hero kuva">
+					</div>
+				</div>
+			</section>
+
+
+			<!--USP BAR-->
+			<aside>
+				<section class="usp-bar">
+					<div class="usp-bar-in">
+						<div class="usp">
+							<h3>Tilaukset alkaen = ???</h3>
+							<p></p>
+						</div>
+						<div class="usp">
+							<h3>Nopeat toimitukset</h3>
+							<p>1-3 arkipäivää</p>
+						</div>
+						<div class="usp">
+							<h3>Luomuainekset</h3>
+							<p>Suomalaiselta tilalta</p>
+						</div>
+						<div class="usp">
+							<h3>100% asiakas tyytyväisyys</h3>
+							<p></p>
+						</div>
+					</div>
+				</section>
+			</aside>
+    
+     <script src="https://cdn.commoninja.com/sdk/latest/commonninja.js" defer></script>
+      <div class="commonninja_component pid-122cd5c8-a793-41a1-adbe-83d6178885f8"></div>
+
+      <section class="meista-section">
+
+  <!-- Vasen kuva -->
+  <div class="about-image">
+    <div class="placeholder">
+      🧑‍🍳
+      <span>KONDITORIAKUVA</span>
+    </div>
+
+    <div class="badge">
+      <strong>15</strong>
+      <small>VUOTTA</small>
+    </div>
+  </div>
+
+  <!-- Oikea teksti -->
+  <div class="meista-content">
+
+    <h2 id="meistä">
+      Käsityötä sydämellä,<br>
+      sukupolvelta toiselle.
+    </h2>
+
+    <p>
+      Kakkusilta on suomalainen leivonnaisyritys, joka on
+      erikoistunut käsityönä valmistettuihin kakkuihin ja
+      leivonnaisiin.
+    </p>
+
+    <p>
+      Tarjoamme laajan valikoiman herkullisia tuotteita,
+      jotka sopivat kaikkiin tilaisuuksiin – syntymäpäivistä
+      häihin, arjesta juhlaan.
+    </p>
+
+    <a href="#" class="about-btn">Lue lisää</a>
+
+  </div>
+
+</section>
+
+
+
+
+
+
+
+		</main>
+
+
+<script>
+
+      /* Hamburger */
+      const hamburger = document.getElementById("hamburger");
+      const navMenu = document.getElementById("nav-menu");
+      hamburger.addEventListener("click", () => {
+        hamburger.classList.toggle("active");
+        navMenu.classList.toggle("active");
+      });
+ 
+      /* Suljetaan menu kun klikataan linkkiä */
+      document.querySelectorAll('.nav-menu a').forEach(link => {
+        link.addEventListener('click', () => {
+          hamburger.classList.remove("active");
+          navMenu.classList.remove("active");
+        });
+      });
+
+</script>
+
+
+
+
+  
+
+
+
+
+
+
+
+  </body>
