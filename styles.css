@@ -212,7 +212,7 @@ nav {
   overflow: hidden;
 }
 .hero-oikea-sisus {
-  width: 75%; height: 55%;
+  width: 75%; height: 64%;
   border-radius: 24px;
   background: rgba(255,255,255,0.3);
   display: flex;
@@ -387,7 +387,12 @@ footer a {
    RESPONSIVE
 ═══════════════════════════════════════════════ */
 
-/* ── Tablet ──────────────────────────────────── */
+/* ── Laptop ──────────────────────────────────── */
+@media (max-width: 1440px) {
+  .hero-oikea-sisus { height: 53%;}
+}
+
+  /* ── Tablet ──────────────────────────────────── */
 @media (max-width: 1024px) {
   .hero {
     grid-template-columns: 1fr;
@@ -402,6 +407,7 @@ footer a {
   .hero p { max-width: 100%; }
   .hero-napit { justify-content: center; }
   .hero-oikea { height: 65vw; min-height: 260px; order: 1; }
+  .hero-oikea-sisus { height: 87%;}
 
   .usp-bar-in { grid-template-columns: 1fr 1fr; }
   .usp:nth-child(2) { border-right: none; }
@@ -444,6 +450,8 @@ footer a {
 
   .hero-oikea { height: 60vw; min-height: 220px; }
   .hero-vasen { padding: 2.5rem 1.2rem; }
+  .hero-oikea-sisus { height: 94%;}
+
 
   .usp-bar-in { grid-template-columns: 1fr 1fr; }
   .usp { border-right: none; border-bottom: 1px solid rgba(255,255,255,0.12); padding: 1rem; }
@@ -475,6 +483,8 @@ footer a {
 }
 
 @media (max-width: 320px) {
+  .hero-oikea-sisus { height: 83%;}
+
   .about-image {
     height: 380px;
   }
