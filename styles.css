@@ -212,7 +212,7 @@ nav {
   overflow: hidden;
 }
 .hero-oikea-sisus {
-  width: 75%; height: 70%;
+  width: 75%; height: 55%;
   border-radius: 24px;
   background: rgba(255,255,255,0.3);
   display: flex;
@@ -223,6 +223,11 @@ nav {
   color: var(--brown-light);
   font-size: 3rem;
   gap: 1rem;
+}
+.hero-oikea-sisus img {
+  width: 100%;
+  height: auto;
+  border-radius: 24px;
 }
 .hero-oikea-sisus span {
   font-family: 'Playfair Display', serif;
@@ -270,7 +275,7 @@ nav {
   background-color: rgb(250,246,240);
 }
 .about-image {
-  width: 540px; height: 680px;
+  width: 542px; height: 725px;
   background: #dfbda9;
   border: 2px dashed rgba(92,61,46,0.2);
   border-radius: 24px;
@@ -284,9 +289,10 @@ nav {
   display: flex; flex-direction: column; align-items: center;
   font-size: 50px; color: rgba(92,61,46,0.5);
 }
-.placeholder span {
-  margin-top: 10px; font-size: 14px; letter-spacing: 2px;
-  text-transform: uppercase; font-family: 'Playfair Display', serif;
+.placeholder img {
+  width: 100%;
+  height: auto;
+  border-radius: 24px;
 }
 .badge {
   position: absolute; bottom: 25px; right: 25px;
@@ -395,7 +401,7 @@ footer a {
   }
   .hero p { max-width: 100%; }
   .hero-napit { justify-content: center; }
-  .hero-oikea { height: 45vw; min-height: 260px; order: 1; }
+  .hero-oikea { height: 65vw; min-height: 260px; order: 1; }
 
   .usp-bar-in { grid-template-columns: 1fr 1fr; }
   .usp:nth-child(2) { border-right: none; }
@@ -403,7 +409,7 @@ footer a {
   .usp:nth-child(4) { border-top: 1px solid rgba(255,255,255,0.12); }
 
   .meista-section { flex-direction: column; text-align: center; gap: 40px; padding: 60px 5%; }
-  .about-image { width: 100%; max-width: 480px; height: 400px; }
+  .about-image { width: 100%; max-width: 480px; height: 642px; }
   .meista-content h2 { font-size: 3rem; }
   .meista-content p { font-size: 1rem; }
 }
@@ -436,7 +442,7 @@ footer a {
   }
   .nav-links a { font-size: 1rem; }
 
-  .hero-oikea { height: 55vw; min-height: 220px; }
+  .hero-oikea { height: 60vw; min-height: 220px; }
   .hero-vasen { padding: 2.5rem 1.2rem; }
 
   .usp-bar-in { grid-template-columns: 1fr 1fr; }
@@ -457,4 +463,19 @@ footer a {
   .usp { border-right: none; }
   .usp:nth-child(odd) { border-right: none; }
   .usp:last-child { border-bottom: none; }
+  .about-image {
+    max-height: 520px;
+  }
+}
+
+@media (max-width: 375px) {
+  .about-image {
+    height: 450px;
+  }
+}
+
+@media (max-width: 320px) {
+  .about-image {
+    height: 380px;
+  }
 }

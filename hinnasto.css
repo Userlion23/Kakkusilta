@@ -1,0 +1,298 @@
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+:root {
+  --cream: #FAF6F0;
+  --rose: #E8C4B0;
+  --rose-dark: #C4876A;
+  --brown: #5C3D2E;
+  --brown-light: #8B6255;
+  --warm-white: #FFFDF9;
+  --text: #2E1B12;
+  --text-muted: #7A5C4E;
+  --border: #E8D8CC;
+  --accent: #D4A574;
+}
+
+html { scroll-behavior: smooth; }
+
+body {
+  font-family: 'DM Sans', sans-serif;
+  background: #FAF6F0;
+  color: #2E1B12;
+  line-height: 1.6;
+}
+
+.logo img {
+  width: 120px; height: auto;
+}
+
+
+/* ── NAVBAR ─────────────────────────────────── */
+nav {
+  background: #FFFDF9;
+  border-bottom: 1px solid #E8D8CC;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+.nav-wrapper {
+  position: relative; /* anchors the dropdown */
+  margin: 0 auto;
+  padding: 0 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 100px;
+}
+.logo {
+  font-family: 'Playfair Display', serif;
+  font-size: 1.4rem;
+  font-weight: 700;
+  color: #5C3D2E;
+  text-decoration: none;
+  letter-spacing: -0.02em;
+  flex-shrink: 0;
+}
+.logo span { color: #C4876A; }
+.logo img  { height: 80px; display: block; }
+
+.nav-links {
+  display: flex;
+  gap: 2rem;
+  list-style: none;
+  align-items: center;
+}
+.nav-links a {
+  text-decoration: none;
+  color: #7A5C4E;
+  font-size: 0.9rem;
+  font-weight: 400;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  transition: color 0.2s;
+}
+.nav-links a:hover { color: #5C3D2E; }
+
+.navlink1 {
+  background: #5C3D2E;
+  color: #FFFDF9 !important;
+  padding: 0.5rem 1.2rem;
+  border-radius: 30px;
+  font-weight: 500 !important;
+}
+.navlink1:hover { background: var(--brown-light); }
+
+.nav-icons { display: flex; gap: 1.2rem; align-items: center; }
+.nav-icon-btn {
+  background: none; border: none; cursor: pointer;
+  color: var(--text-muted); font-size: 1.1rem; padding: 4px; transition: color 0.2s;
+}
+.nav-icon-btn:hover { color: var(--brown); }
+
+/* ── HAMBURGER ───────────────────────────────── */
+.hamburger {
+  display: none;
+  flex-direction: column;
+  gap: 5px;
+  background: none; border: none; cursor: pointer; padding: 4px;
+  z-index: 200;
+}
+.hamburger span {
+  display: block; width: 24px; height: 2px;
+  background: var(--text); border-radius: 2px;
+  transition: transform 0.25s ease, opacity 0.25s ease;
+}
+.hamburger.active span:nth-child(1) { transform: translateY(7px) rotate(45deg); }
+.hamburger.active span:nth-child(2) { opacity: 0; }
+.hamburger.active span:nth-child(3) { transform: translateY(-7px) rotate(-45deg); }
+
+/* ── HINNASTO ────────────────────────────────────── */
+.hinnasto {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 60px 2rem 80px;
+}
+
+.hinnasto h2 {
+  font-family: 'Playfair Display', serif;
+  color: var(--brown);
+  font-size: 2rem;
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.taulukko-wrap {
+  background: var(--warm-white);
+  border: 1px solid var(--border);
+  border-radius: 16px;
+  padding: 24px;
+  margin-bottom: 2.5rem;
+  box-shadow: 0 4px 16px rgba(92,61,46,0.06);
+  overflow-x: auto;
+}
+
+.taulukko-wrap h3 {
+  font-family: 'Playfair Display', serif;
+  color: var(--brown);
+  font-size: 1.2rem;
+  margin-bottom: 1rem;
+}
+.taulukko-wrap h3 span {
+  font-family: 'DM Sans', sans-serif;
+  font-size: 0.85rem;
+  font-weight: 400;
+  color: var(--text-muted);
+}
+
+.hintataulukko {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 0.95rem;
+}
+
+.hintataulukko th,
+.hintataulukko td {
+  padding: 12px 14px;
+  text-align: center;
+  border-bottom: 1px solid var(--border);
+}
+
+.hintataulukko th:first-child,
+.hintataulukko td:first-child {
+  text-align: left;
+  font-weight: 500;
+  color: var(--brown);
+}
+
+.hintataulukko thead th {
+  background: var(--rose);
+  color: var(--brown);
+  font-weight: 600;
+  font-size: 0.78rem;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  line-height: 1.3;
+}
+
+.hintataulukko thead th:first-child {
+  border-top-left-radius: 8px;
+  border-bottom-left-radius: 8px;
+}
+.hintataulukko thead th:last-child {
+  border-top-right-radius: 8px;
+  border-bottom-right-radius: 8px;
+}
+
+.hintataulukko tbody tr:nth-child(even) {
+  background: #FBF2EC;
+}
+
+.hintataulukko tbody tr:last-child td {
+  border-bottom: none;
+}
+
+.taulukko-rivi {
+  display: flex;
+  flex-direction: row;
+  gap: 2rem;
+  flex-wrap: wrap;
+}
+.taulukko-rivi .taulukko-wrap {
+  flex: 1 1 280px;
+  margin-bottom: 0;
+}
+
+@media (max-width: 600px) {
+  .hinnasto { padding: 40px 1.2rem 60px; }
+  .taulukko-wrap { padding: 16px; }
+  .hintataulukko { font-size: 0.85rem; }
+  .hintataulukko th, .hintataulukko td { padding: 8px 8px; }
+}
+
+
+
+
+
+
+
+/* ── FOOTER ──────────────────────────────────── */
+footer a { text-decoration: none; color: var(--rose); }
+
+.topoffooter {
+  background-color: var(--text);
+  display: flex; justify-content: space-between; align-items: flex-start;
+  padding: 40px; border-bottom: 1px solid var(--accent);
+  flex-wrap: wrap; gap: 2rem;
+}
+.infocard { 
+  display: flex; flex-direction: column; gap: 1rem; 
+}
+.infocard ul { 
+  display: flex; gap: 0.5rem; list-style: none; 
+}
+.infocard-links img {
+  width: 30px;
+}
+
+.logo1 {
+  background: rgba(255, 255, 255, 0.384);
+  border-radius: 100px;
+  margin-right: 10px;
+  padding: 10px 0px;
+}
+.logo1 img {
+  width: 100px; height: auto;
+}
+
+.topoffooter > div { display: flex; flex-direction: row; gap: 3rem; flex-wrap: wrap; }
+.navigation, .yhteystiedot { display: flex; flex-direction: column; gap: 0.4rem; }
+.navigation h3, .yhteystiedot h3 {
+  color: var(--warm-white); font-size: 0.8rem;
+  letter-spacing: 0.1em; text-transform: uppercase; margin-bottom: 0.4rem;
+}
+
+.bottomfooter {
+  background-color: var(--text); color: var(--warm-white);
+  display: flex; justify-content: space-between;
+  padding: 20px 40px; flex-wrap: wrap; gap: 0.5rem; font-size: 0.85rem;
+}
+.bottomfooter div { display: flex; }
+
+/* ═══════════════════════════════════════════════
+   RESPONSIVE
+═══════════════════════════════════════════════ */
+@media (max-width: 768px) {
+  .hamburger { display: flex; }
+  .nav-icons  { display: none; }
+
+  /* hide desktop nav, make it a dropdown */
+  .nav-menu {
+    display: none;
+    position: absolute;
+    top: 70px; left: 0; right: 0;
+    background: #FFFDF9;
+    border-bottom: 2px solid var(--border);
+    padding: 1.5rem 2rem;
+    box-shadow: 0 8px 24px rgba(92,61,46,0.12);
+    z-index: 150;
+  }
+  .nav-menu.active { display: block; }
+
+  .nav-links { flex-direction: column; align-items: flex-start; gap: 1.2rem; }
+  .nav-links a { font-size: 1rem; }
+
+  /* stack form fields */
+  .rivi1, .rivi2 { grid-template-columns: 1fr; }
+
+  form { padding: 28px 20px; }
+  .lomake { padding: 40px 16px; }
+
+  .topoffooter { flex-direction: column; padding: 30px 24px; }
+  .topoffooter > div { gap: 2rem; }
+  .bottomfooter { flex-direction: column; align-items: center; text-align: center; padding: 16px 24px; }
+}
+
+@media (max-width: 480px) {
+  .lomake h3 { font-size: 1.6rem; }
+  .lomake button { width: 100%; }
+}

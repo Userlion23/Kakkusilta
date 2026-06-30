@@ -33,6 +33,7 @@
           <div class="nav-menu" id="nav-menu">
             <div class="nav-links">
               <a href="index.html#meistä">MEISTÄ</a>
+              <a href="hinnasto.html">HINNASTO</a>
               <a class="navlink1" href="yhteystiedot.html">TEE TILAUS</a>
             </div>
           </div>
@@ -86,12 +87,16 @@
             </div>
           </div>   
 
-          <div class="label" style="margin-top:16px">
-            <label for="lisatiedot">Lisätiedot ja toiveet</label>
-            <textarea id="lisatiedot" name="Lisätiedot" placeholder="Allergeenit, väritoiveet, teksti kakkuun..."></textarea>
+          <div class="rivi3">
+            <div class="label" style="margin-top:16px">
+              <label for="lisatiedot">Lisätiedot ja toiveet</label>
+              <textarea id="lisatiedot" name="Lisätiedot" placeholder="Allergeenit, väritoiveet, teksti kakkuun..."></textarea>
+              <input type="file" name="attachment" />
+            </div>
           </div>
 
           <div class="rivi3">
+            <input type="checkbox" name="botcheck" class="hidden" style="display: none;">
             <button type="submit">Lähetä tilaus →</button>
           </div>
 

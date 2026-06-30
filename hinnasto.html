@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="fi">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Hinnasto – käsityönä valmistettuja kakkuja ja leivonnaisia. Vastaamme 2 arkipäivän sisällä.">
+    <link rel="stylesheet" href="hinnasto.css">
+    <link rel="icon" type="image/png" href="/favicon-96x96.png" sizes="96x96" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <link rel="shortcut icon" href="/favicon.ico" />
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+    <link rel="manifest" href="/site.webmanifest" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;600;700&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet">
+    <link rel="canonical" href="https://kakkusilta.fi/hinnasto" />
+    <title>Tilauslomake | Kakkusilta</title>
+  </head>
+
+  <body>
+
+    <!-- NAVBAR -->
+    <header class="navbar" role="navigation" id="navbar">
+      <nav>
+        <div class="nav-wrapper">
+
+          <!-- LOGO -->
+          <div class="logo">
+            <a fetchpriority="high" class="logo" href="index.html"><img src="kuvat/Logo1.webp" alt="Logo"></a>
+          </div>
+
+          <!-- NAVIGAATIO LINKIT (desktop + mobile dropdown) -->
+          <div class="nav-menu" id="nav-menu">
+            <div class="nav-links">
+              <a href="index.html#meistä">MEISTÄ</a>
+              <a href="hinnasto.html">HINNASTO</a>
+              <a class="navlink1" href="yhteystiedot.html">TEE TILAUS</a>
+            </div>
+          </div>
+
+          <!-- HAMBURGER -->
+          <button class="hamburger" id="hamburger" aria-label="Avaa valikko" aria-expanded="false">
+            <span></span>
+            <span></span>
+            <span></span>
+          </button>
+
+        </div>
+      </nav>
+    </header>
+
+    <main>
+      <section class="hinnasto">
+
+        <h2>Kakkuhinnasto</h2>
+        <div class="taulukko-wrap">
+          <table class="hintataulukko">
+            <thead>
+              <tr>
+                <th>HLÖ</th>
+                <th>Marja, kerma, raita,<br>hedelmä ja kinuski</th>
+                <th>Kuva, sokerimassa<br>ja suklaa</th>
+                <th>Fantasia ja muoto</th>
+                <th>Hyydyke, juusto</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr><td>6–10</td><td>37€</td><td>47€</td><td>57€</td><td>35€</td></tr>
+              <tr><td>10–15</td><td>47€</td><td>57€</td><td>67€</td><td>45€</td></tr>
+              <tr><td>20</td><td>62€</td><td>72€</td><td>87€</td><td>60€</td></tr>
+              <tr><td>25</td><td>92€</td><td>87€</td><td>105€</td><td>75€</td></tr>
+              <tr><td>30–40 pyöreä</td><td>140€</td><td>105€</td><td>125€</td><td>90€</td></tr>
+              <tr><td>30 suorakaide</td><td>130€</td><td>140€</td><td>165€</td><td>140€</td></tr>
+              <tr><td>50 suorakaide</td><td>170€</td><td>140€</td><td>175€</td><td>200€</td></tr>
+            </tbody>
+          </table>
+        </div>
+
+        <div class="taulukko-rivi">
+
+          <div class="taulukko-wrap">
+            <h3>Voileipäkakut <span>(lohi/poro/glut. +5€)</span></h3>
+            <table class="hintataulukko pieni">
+              <thead>
+                <tr><th>HLÖ</th><th>Hinta</th></tr>
+              </thead>
+              <tbody>
+                <tr><td>4–6</td><td>45€</td></tr>
+                <tr><td>8–10</td><td>65€</td></tr>
+                <tr><td>10–15</td><td>80€</td></tr>
+                <tr><td>20</td><td>120€</td></tr>
+                <tr><td>25</td><td>145€</td></tr>
+              </tbody>
+            </table>
+          </div>
+
+          <div class="taulukko-wrap">
+            <h3>Suolaiset piirakat</h3>
+            <table class="hintataulukko pieni">
+              <thead>
+                <tr><th>HLÖ</th><th>Hinta</th></tr>
+              </thead>
+              <tbody>
+                <tr><td>4–6</td><td>16,50€</td></tr>
+                <tr><td>6–8</td><td>24€</td></tr>
+                <tr><td>10–12</td><td>40€</td></tr>
+                <tr><td>Pelti 20–25 palaa</td><td>85€</td></tr>
+                <tr><td>Piirakkamuffinit</td><td>3,50€/kpl</td></tr>
+              </tbody>
+            </table>
+          </div>
+
+        </div>
+
+      </section>
+    </main>
+
+    <!-- FOOTER -->
+    <footer>
+      <section class="topoffooter">
+        <section class="infocard">
+          <a class="logo1" href="index.html"><img src="kuvat/logo1.png" alt="logo"></a>
+          <div class="infocard-links">
+          <ul>
+            <li><a href="instagram"><img src="kuvat/instagram.png" alt="Instagram"></a></li>
+            <li><a href="facebook"><img src="kuvat/facebook.png" alt="Facebook"></a></li>
+            <li><a href="mailto:kakkusilta@gmail.com"><img src="kuvat/gmail.png" alt="Sähköposti"></a></li>
+          </ul>
+          </div>
+        </section>
+        <div>
+          <section class="navigation">
+            <h3>NAVIGAATIO</h3>
+            <a href="yhteystiedot.html">Yhteystiedot</a>
+            <a href="index.html#meistä">Meistä</a>
+          </section>
+          <section class="yhteystiedot">
+            <h3>YHTEYSTIEDOT</h3>
+            <a href="mailto:kakkusilta@gmail.com">Kakkusilta@gmail.com</a>
+            <a href="sms:+358451200870">045 1200870</a>
+          </section>
+        </div>
+      </section>
+      <section class="bottomfooter">
+        <div><p>© 2026 Kakku Silta</p></div>
+        <div><p>Visa · Mastercard · PayPal · MobilePay</p></div>
+      </section>
+    </footer>
+
+    <script>
+      const hamburger = document.getElementById('hamburger');
+      const navMenu   = document.getElementById('nav-menu');
+
+      hamburger.addEventListener('click', () => {
+        const open = hamburger.classList.toggle('active');
+        navMenu.classList.toggle('active');
+        hamburger.setAttribute('aria-expanded', open);
+      });
+
+      navMenu.querySelectorAll('a').forEach(link => {
+        link.addEventListener('click', () => {
+          hamburger.classList.remove('active');
+          navMenu.classList.remove('active');
+          hamburger.setAttribute('aria-expanded', 'false');
+        });
+      });
+
+      document.addEventListener('click', e => {
+        if (!hamburger.contains(e.target) && !navMenu.contains(e.target)) {
+          hamburger.classList.remove('active');
+          navMenu.classList.remove('active');
+          hamburger.setAttribute('aria-expanded', 'false');
+        }
+      });
+    </script>
+
+  </body>
+</html>
